@@ -5,42 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>张博楠｜数据AI产品经理</title>
   <style>
-    :root{
-      --bg:#0f172a; --panel:#111827; --card:#ffffff; --text:#0f172a; --muted:#475569;
-      --line:#e2e8f0; --accent:#2563eb; --soft:#eff6ff;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;background:#f8fafc;color:var(--text);line-height:1.7}
-    .hero{background:linear-gradient(135deg,#0f172a,#111827);color:#fff;padding:56px 20px}
-    .wrap{max-width:980px;margin:0 auto}
-    h1,h2,h3,p{margin:0}
-    .title{font-size:40px;font-weight:700;letter-spacing:.5px}
-    .subtitle{margin-top:12px;font-size:20px;color:#cbd5e1}
-    .summary{margin-top:18px;max-width:760px;color:#e2e8f0}
-    .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-    .btn{display:inline-block;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:600}
-    .btn.primary{background:#fff;color:#0f172a}
-    .btn.secondary{border:1px solid rgba(255,255,255,.35);color:#fff}
-    .main{padding:28px 20px 48px}
-    .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 8px 24px rgba(15,23,42,.04)}
-    .section-title{font-size:24px;font-weight:700;margin-bottom:14px}
-    .meta{display:grid;gap:8px;color:var(--muted);font-size:14px}
-    .chips{display:flex;gap:10px;flex-wrap:wrap}
-    .chip{padding:7px 12px;border-radius:999px;background:#f1f5f9;color:#334155;font-size:13px;border:1px solid #e2e8f0}
-    .project{border:1px solid var(--line);border-radius:16px;padding:18px}
-    .project + .project{margin-top:14px}
-    .project h3{font-size:18px}
-    .project p{margin-top:8px;color:var(--muted);font-size:15px}
-    ul{margin:10px 0 0 18px;padding:0}
-    li{margin:6px 0;color:var(--muted)}
-    .footer{padding:0 20px 42px;color:#64748b;font-size:14px}
-    @media (max-width: 800px){
-      .grid{grid-template-columns:1fr}
-      .title{font-size:32px}
-      .subtitle{font-size:18px}
-    }
-  </style>
+  :root{
+    --bg:#0f172a; --panel:#111827; --card:#ffffff; --text:#0f172a; --muted:#475569;
+    --line:#e2e8f0; --accent:#2563eb; --soft:#eff6ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;background:#f8fafc;color:var(--text);line-height:1.7}
+  .hero{background:linear-gradient(135deg,#0f172a,#111827);color:#fff;padding:56px 20px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1,h2,h3,p{margin:0}
+  .title{font-size:40px;font-weight:700;letter-spacing:.5px}
+  .subtitle{margin-top:12px;font-size:20px;color:#cbd5e1}
+  .summary{margin-top:18px;max-width:760px;color:#e2e8f0}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+  .btn{display:inline-block;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:600}
+  .btn.primary{background:#fff;color:#0f172a}
+  .btn.secondary{border:1px solid rgba(255,255,255,.35);color:#fff}
+
+  .project-btn{
+    display:inline-block;
+    padding:10px 16px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:600;
+    border:1px solid #cbd5e1;
+    color:#334155;
+    background:#ffffff;
+  }
+
+  .project-btn:hover{
+    background:#f8fafc;
+  }
+
+  .main{padding:28px 20px 48px}
+  .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 8px 24px rgba(15,23,42,.04)}
+  .section-title{font-size:24px;font-weight:700;margin-bottom:14px}
+  .meta{display:grid;gap:8px;color:var(--muted);font-size:14px}
+  .chips{display:flex;gap:10px;flex-wrap:wrap}
+  .chip{padding:7px 12px;border-radius:999px;background:#f1f5f9;color:#334155;font-size:13px;border:1px solid #e2e8f0}
+  .project{border:1px solid var(--line);border-radius:16px;padding:18px}
+  .project + .project{margin-top:14px}
+  .project h3{font-size:18px}
+  .project p{margin-top:8px;color:var(--muted);font-size:15px}
+  ul{margin:10px 0 0 18px;padding:0}
+  li{margin:6px 0;color:var(--muted)}
+  .footer{padding:0 20px 42px;color:#64748b;font-size:14px}
+  @media (max-width: 800px){
+    .grid{grid-template-columns:1fr}
+    .title{font-size:32px}
+    .subtitle{font-size:18px}
+  }
+</style>
 </head>
 <body>
   <header class="hero">
@@ -96,8 +112,8 @@
     <li>根据使用过程持续优化处理步骤、反馈提示与输出格式，加深了对“需求理解—规则设计—流程优化—结果验证”闭环的理解。</li>
   </ul>
   <div style="margin-top:14px;">
-    <a class="btn secondary" href="https://github.com/zhangbonan27-sudo/ai-report-validation-flow" target="_blank">查看项目</a>
-  </div>
+  <a class="project-btn" href="https://github.com/zhangbonan27-sudo/ai-report-validation-flow" target="_blank">查看项目</a>
+</div>
 </div>
 
 <div class="project">
@@ -114,8 +130,8 @@
     <li>使用 Tableau 设计并开发交互式可视化看板，支持关键指标下钻分析，帮助快速定位如“特定渠道转化率异常波动”等问题。</li>
   </ul>
   <div style="margin-top:14px;">
-    <a class="btn secondary" href="https://github.com/zhangbonan27-sudo/ecommerce-dashboard-analysis" target="_blank">查看项目</a>
-  </div>
+  <a class="project-btn" href="https://github.com/zhangbonan27-sudo/ai-report-validation-flow" target="_blank">查看项目</a>
+</div>
 </div>
       </section>
 
